@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  height: 100%;
+  background: linear-gradient(135deg, #d0eaf0, #89cff0);
+  background-attachment: fixed;
+  color: #333; 
+}
+
+.navbar-custom {
+  background: rgba(10, 10, 30, 0.9); 
+  border-bottom: 3px solid #89cff0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+}
+
+.navbar-custom .nav-link {
+  color: #f0f0f0;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #89cff0;
+}
+
+.content-container {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95); 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 85%;
+  margin: 40px auto 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-content h2 {
+  font-size: 3rem;
+  color: #333; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  font-family: 'Great Vibes', cursive; /* Taylor Swift-inspired font */
+}
+
+.section-content h3 {
+  font-size: 2rem;
+  color: #555;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-family: 'Dancing Script', cursive; /* Taylor Swift-inspired font */
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 80%;
+  margin: 10px auto;
+  color: #555;
+  font-family: 'Dancing Script', cursive;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  color: #555;
+  padding: 5px 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+.section-content.home-section,
+.section-content.about-section,
+.section-content.education-section,
+.section-content.hobbies-section,
+.section-content.contact-section {
+  max-width: 70%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 70%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.contact-section h3 {
+  color: #89cff0;
+  font-family: 'Great Vibes', cursive;
+}
+
+.neon {
+  animation: pastelGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pastelGlow {
+  0% {
+    text-shadow: 0 0 6px #89cff0, 0 0 12px #89cff0, 0 0 20px #89cff0;
+  }
+  100% {
+    text-shadow: 0 0 2px #555, 0 0 6px #555, 0 0 14px #555;
+  }
+}
